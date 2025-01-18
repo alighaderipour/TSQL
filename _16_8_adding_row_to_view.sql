@@ -40,6 +40,5 @@ insert into ViewBYDepartment (EmployeeNumber, DateOfTransaction, TotamAmount) va
 132, '2015-07-07', 999.99)
 
 
+
 select * from ViewBYDepartment
-
-
