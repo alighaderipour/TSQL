@@ -1,6 +1,9 @@
-CREATE TRIGGER [schema_name.]trigger_name
-ON table_name
-AFTER  {[INSERT],[UPDATE],[DELETE]}
-[NOT FOR REPLICATION]
-AS
-{sql_statements}
+create trigger tr_tblDepartment
+on dbo._11_tblDepartment
+after UPDATE , INSERT, DELETE
+as 
+BEGIN
+    select * from inserted
+    select * from deleted
+set NOCOUNT on
+end
