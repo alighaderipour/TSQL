@@ -28,8 +28,8 @@ AFTER DELETE, UPDATE, INSERT
 AS
 BEGIN
 	BEGIN
-		SELECT
-			@@NESTLEVEL AS NESTLEVEVL
+		SELECT @@NESTLEVEL AS NESTLEVEVL
+
 		IF @@ROWCOUNT >0
 		BEGIN
 			SELECT 
@@ -42,6 +42,11 @@ BEGIN
 	END
 END
 GO
+
+
+SELECT * FROM ViewBYDepartment vb WHERE vb.EmployeeNumber = 132 and vb.TotamAmount = -2.77
+
+
 
 BEGIN TRAN
 INSERT INTO _11_tblTransaction (Amount, DateOfTransaction, EmployeeNumber)
@@ -59,3 +64,31 @@ WHERE TotamAmount = -2.77
 --SELECT * from ViewBYDepartment vb where vb.EmployeeNumber = 132 and vb.TotamAmount = -2.77
 ROLLBACK TRAN
 
+--try delete for- real
+DELETE FROM ViewBYDepartment
+WHERE TotamAmount = -2.77
+	AND EmployeeNumber = 132
+-- it's been deleted
+SELECT * FROM ViewBYDepartment vb WHERE vb.EmployeeNumber = 132 and vb.TotamAmount = -2.77
+
+--what happened to tblTransaction's trigger?
+SELECT * from _11_tblTransaction t where t.EmployeeNumber = 132
+
+
+-- if you try to delete this particular again you can do it still you get some select statement which are empty
+-- to avoid that we add @@rowcount
+
+
+-- if we want to see a particualr column actually updated 
+/*
+IF UPDATE(DateOfTransaction)
+begin
+	select ...
+	select ..
+end
+*/
+
+/*
+columns_updated()  && 2=2
+
+*/
