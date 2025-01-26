@@ -1,0 +1,35 @@
+db.listingsAndReviews.find( {}, {address: 1, name: 1} )
+db.listingsAndReviews.find( {}, {address: 1, name: 1, _id: 0} )
+db.restaurants.find( {}, {grades: 0} )
+
+
+Review
+6 min
+Nice job! In this lesson, we learned how to query documents in MongoDB. Let’s recap some key takeaways from the lesson:
+
+We can view a list of all our databases by running the show dbs command.
+We can navigate to a particular 
+Preview: Docs Loading link description
+database
+, or see which database we are currently using with the use <db>, and db commands, respectively.
+We can use the .find() 
+Preview: Docs Loading link description
+method
+ to query a collection. Excluding a query 
+Preview: Docs Loading link description
+argument
+ matches all documents from the collection.
+We can match documents on particular field values by passing a query argument to the .find() method.
+When a collection’s record has an embedded document, we can query the fields inside of it using dot notation (.) and wrapping the fields in quotation marks.
+The $gt and $lt comparison operators allow our query to match documents where the value for a particular field is greater than or less than a given value, respectively.
+We can use the .sort() method to sort our query results by a particular field in ascending or descending order.
+We can include a projection in our query to include or exclude certain fields from our returned documents.
+In addition to the methods and operators we’ve covered in this lesson, MongoDB provides us with even more syntax that can be useful to us when performing queries:
+
+The .count() method returns the number of documents that match a query.
+The .limit() method can be chained to the .find() method, and specifies the maximum number of documents a query will output.
+The $exists operator can be included in a query filter to only match documents that contain the given field.
+The $ne operator helps check if a field is not equal to a specified value.
+The $and and $or operators help perform AND or OR logic operators.
+Lastly, if you are looking for a way to make query outputs look a bit more “pretty”, you can use the .pretty() method!
+
