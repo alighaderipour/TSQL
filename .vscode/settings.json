@@ -7,7 +7,7 @@
                 "encrypt": true
             },
             "previewLimit": 50,
-            "server": "DESKTOP-3QQD2KV",
+            "server": "DESKTOP-CUI418O",
             "port": 1433,
             "driver": "MSSQL",
             "name": "SQL SERVER",
