@@ -9,3 +9,4 @@ select @@servername CurrentServer
 select @@version CurrentVersion 
 
 
+
