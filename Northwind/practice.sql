@@ -8,5 +8,3 @@ select user_name() CurrentUser
 select @@servername CurrentServer
 select @@version CurrentVersion 
 
-
-
