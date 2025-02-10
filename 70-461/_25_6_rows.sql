@@ -43,3 +43,6 @@ INNER JOIN
     tblAttendance a ON e.EmployeeNumber = a.EmployeeNumber
 GROUP BY 
     e.EmployeeNumber, e.EmployeeFirstName, e.EmployeeLastName, e.Department;
+
+
+test
