@@ -44,5 +44,3 @@ INNER JOIN
 GROUP BY 
     e.EmployeeNumber, e.EmployeeFirstName, e.EmployeeLastName, e.Department;
 
-
-test

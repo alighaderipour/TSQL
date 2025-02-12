@@ -7,13 +7,13 @@
                 "encrypt": true
             },
             "previewLimit": 50,
-            "server": "DESKTOP-CUI418O",
+            "server": "localhost",
             "port": 1433,
             "driver": "MSSQL",
             "name": "SQL SERVER",
-            "database": "Leetcode",
-            "username": "alighaderipour",
-            "password": "Aa@123456"
+            "database": "dbtest",
+            "username": "sa",
+            "password": "YourStrong!Passw0rd"
         }
     ]
 }
