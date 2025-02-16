@@ -363,7 +363,10 @@ MigrationBackup/
 FodyWeavers.xsd
 .vscode/settings.json
 
+<<<<<<< Updated upstream
 
 venv/
 
 
+=======
+>>>>>>> Stashed changes

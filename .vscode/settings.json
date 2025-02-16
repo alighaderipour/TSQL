@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "DESKTOP-CUI418O",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "SQL SERVER",
+            "database": "dbtest",
+            "username": "alighaderipour",
+            "password": "YourStrong!Passw0rd"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "my_sql",
+            "database": "test_database",
+            "username": "root",
+            "password": "Aa@123456"
+        }
+    ]
+}
